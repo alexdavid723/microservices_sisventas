@@ -24,7 +24,7 @@ spring:
           enabled: true
       routes:
         - id: categoria-service
-          uri: lb://catalogo-service
+          uri: lb://categoria-service
           predicates:
             - Path=/categoria/**,/articulo/**
           filters:
@@ -34,7 +34,7 @@ spring:
           predicates:
             - Path=/auth/**
         - id: ingreso-service
-          uri: lb://catalogo-service
+          uri: lb://ingreso-service
           predicates:
             - Path=/Ingreso/**,/IngresoDetalle/**
           filters:
