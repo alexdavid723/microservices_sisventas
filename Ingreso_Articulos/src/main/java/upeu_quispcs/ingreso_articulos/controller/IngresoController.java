@@ -20,13 +20,13 @@ public class IngresoController {
     }
 
     @PostMapping()
-    public ResponseEntity<Ingreso> save(@RequestBody Ingreso ingreso) {
-        return ResponseEntity.ok(ingresoService.guardar(ingreso));
+    public Ingreso guardar(@RequestBody Ingreso ingreso) {
+        return ingresoService.guardar(ingreso);
     }
 
     @PutMapping()
-    public ResponseEntity<Ingreso> update(@RequestBody Ingreso ingreso) {
-        return ResponseEntity.ok(ingresoService.actualizar(ingreso));
+    public Ingreso actualizar(@RequestBody Ingreso ingreso){
+        return ingresoService.actualizar(ingreso);
     }
 
     @GetMapping("/{id}")
@@ -35,8 +35,7 @@ public class IngresoController {
     }
 
     @DeleteMapping("/{id}")
-    public String deleteById(@PathVariable(required = true) Integer id) {
+    public void deleteById(@PathVariable(required = true) Integer id) {
         ingresoService.eliminarPorId(id);
-        return "Eliminacion Correcta";
     }
 }
