@@ -36,7 +36,7 @@ spring:
         - id: ingreso-service
           uri: lb://ingreso-service
           predicates:
-            - Path=/Ingreso/**,/IngresoDetalle/**
+            - Path=/Ingreso/**,/DetalleIngreso/**
           filters:
             - AuthFilter
 
