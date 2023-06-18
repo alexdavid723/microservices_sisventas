@@ -39,4 +39,11 @@ spring:
             - Path=/Ingreso/**,/DetalleIngreso/**
           filters:
             - AuthFilter
+        - id: persona-service
+          uri: lb://persona-service
+          predicates:
+            - Path=/persona/**
+          filters:
+            - AuthFilter
+
 
