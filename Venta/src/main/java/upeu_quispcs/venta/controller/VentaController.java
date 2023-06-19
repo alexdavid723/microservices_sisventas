@@ -3,7 +3,7 @@ package upeu_quispcs.venta.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import upeu_quispcs.venta.entiry.Venta;
+import upeu_quispcs.venta.entity.Venta;
 import upeu_quispcs.venta.service.VentaService;
 
 import java.util.List;

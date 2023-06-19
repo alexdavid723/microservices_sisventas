@@ -1,11 +1,13 @@
-package upeu_quispcs.venta.entiry;
+package upeu_quispcs.venta.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
+import lombok.Data;
 import upeu_quispcs.venta.dto.Persona;
 
 import java.util.List;
-
+@Entity
+@Data
 public class Venta {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

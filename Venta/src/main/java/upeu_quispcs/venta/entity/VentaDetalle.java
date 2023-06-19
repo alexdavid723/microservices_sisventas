@@ -1,4 +1,4 @@
-package upeu_quispcs.venta.entiry;
+package upeu_quispcs.venta.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;

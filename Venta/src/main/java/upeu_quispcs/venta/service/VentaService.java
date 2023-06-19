@@ -1,6 +1,6 @@
 package upeu_quispcs.venta.service;
 
-import upeu_quispcs.venta.entiry.Venta;
+import upeu_quispcs.venta.entity.Venta;
 
 import java.util.List;
 import java.util.Optional;
