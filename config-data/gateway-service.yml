@@ -45,5 +45,11 @@ spring:
             - Path=/persona/**
           filters:
             - AuthFilter
+        - id: venta-service
+          uri: lb://venta-service
+          predicates:
+            - Path=/venta/**
+          filters:
+            - AuthFilter
 
 
